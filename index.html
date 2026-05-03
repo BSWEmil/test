@@ -3,73 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Über Emil</title>
+    <title>HTML Lernhub – Next Step Basics</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="hero">
-      <p class="badge">Persönliche Website</p>
-      <h1>Hi, ich bin Emil 👋</h1>
+      <p class="badge">HTML Lernhub</p>
+      <h1>HTML lernen – für alle mit ersten Vorkenntnissen</h1>
       <p>
-        Willkommen auf meiner kleinen Seite! Hier findest du eine kurze Übersicht über mich,
-        meine Interessen und wie du mich erreichen kannst.
+        Perfekt, wenn du die Grundlagen schon kennst und jetzt mit Struktur, Semantik,
+        Formularen und Komponenten sauberer werden willst.
       </p>
-      <div class="hero-actions">
-        <button id="aboutBtn" type="button">Mehr über mich</button>
-        <button id="hobbyBtn" type="button" class="secondary">Zufalls-Hobby</button>
-      </div>
+      <a class="btn-link" href="#lektionen">Zu den Lektionen</a>
     </header>
 
-    <main class="container">
-      <section class="card">
-        <h2>Steckbrief</h2>
-        <ul class="facts">
-          <li><strong>Name:</strong> Emil</li>
-          <li><strong>Alter:</strong> 16 Jahre</li>
-          <li><strong>Wohnort:</strong> Deutschland</li>
-          <li><strong>Lieblingsfach:</strong> Informatik</li>
+    <main class="container" id="lektionen">
+      <section class="card intro">
+        <h2>Was dich erwartet</h2>
+        <ul>
+          <li>4 kompakte Lektionen mit Fokus auf praxisnahe HTML-Struktur.</li>
+          <li>Animierte Karten für bessere Übersicht.</li>
+          <li>Live-Vorschau: Du klickst, und siehst direkt das HTML-Ergebnis.</li>
         </ul>
       </section>
 
-      <section class="card grid">
-        <article>
-          <h3>Über mich</h3>
-          <p>
-            Ich lerne gerne neue Dinge, besonders rund um Technik, Webseiten und kreative Projekte.
-          </p>
+      <section class="lesson-grid">
+        <article class="card lesson" data-lesson="0">
+          <h3>Lektion 1: Semantisches Layout</h3>
+          <p>Nutze <code>header</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>footer</code> richtig.</p>
+          <button class="preview-btn" type="button">Vorschau anzeigen</button>
         </article>
-        <article>
-          <h3>Meine Hobbys</h3>
-          <p>
-            In meiner Freizeit spiele ich Fußball, höre Musik und probiere neue Coding-Ideen aus.
-          </p>
+
+        <article class="card lesson" data-lesson="1">
+          <h3>Lektion 2: Listen & Content-Struktur</h3>
+          <p>Baue Inhaltsblöcke mit verschachtelten Listen und sinnvoller Hierarchie.</p>
+          <button class="preview-btn" type="button">Vorschau anzeigen</button>
         </article>
-        <article>
-          <h3>Mein Ziel</h3>
-          <p>
-            Ich möchte immer besser im Programmieren werden und später eigene größere Projekte bauen.
-          </p>
+
+        <article class="card lesson" data-lesson="2">
+          <h3>Lektion 3: Formulare sauber aufbauen</h3>
+          <p>Labels, Fieldsets und Inputs so strukturieren, dass sie klar und zugänglich sind.</p>
+          <button class="preview-btn" type="button">Vorschau anzeigen</button>
+        </article>
+
+        <article class="card lesson" data-lesson="3">
+          <h3>Lektion 4: Karten-Komponenten</h3>
+          <p>Wiederverwendbare Card-Struktur für Projekte und Portfolios.</p>
+          <button class="preview-btn" type="button">Vorschau anzeigen</button>
         </article>
       </section>
 
-      <section class="card">
-        <h2>Interaktiv</h2>
-        <p id="aboutOutput" aria-live="polite">Klick auf „Mehr über mich“, um einen Fun-Fact zu sehen.</p>
-        <p id="hobbyOutput" aria-live="polite">Klick auf „Zufalls-Hobby“, um ein Hobby zu erhalten.</p>
-      </section>
-
-      <section class="card contact">
-        <h2>Kontakt</h2>
-        <p>Du kannst mir gerne schreiben:</p>
-        <div class="contact-actions">
-          <a class="btn-link" href="mailto:emil@example.com">E-Mail senden</a>
-          <a class="btn-link secondary" href="#">Instagram</a>
-        </div>
+      <section class="card preview-panel">
+        <h2>Live Vorschau</h2>
+        <p id="previewTitle">Wähle eine Lektion aus.</p>
+        <pre id="codePreview" aria-live="polite"></pre>
       </section>
     </main>
 
     <footer>
-      <small>© 2026 Emil – Danke fürs Vorbeischauen.</small>
+      <small>© 2026 HTML Lernhub – Lernschritt für Fortgeschrittene Basics.</small>
     </footer>
 
     <script src="script.js"></script>
