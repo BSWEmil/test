@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ernährungsübersicht</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Kleine Übersicht zur Ernährung</h1>
+    <p>Einfach, ausgewogen und alltagstauglich.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Die 3 Basics</h2>
+      <ul>
+        <li><strong>Viel Gemüse & Obst:</strong> Bunt essen für Vitamine und Ballaststoffe.</li>
+        <li><strong>Ausreichend trinken:</strong> Vor allem Wasser oder ungesüßten Tee.</li>
+        <li><strong>Regelmäßige Mahlzeiten:</strong> Hilft beim Energielevel über den Tag.</li>
+      </ul>
+    </section>
+
+    <section class="card grid">
+      <article>
+        <h3>Kohlenhydrate</h3>
+        <p>Liefern Energie. Bevorzuge Vollkornprodukte, Kartoffeln und Hülsenfrüchte.</p>
+      </article>
+      <article>
+        <h3>Eiweiß</h3>
+        <p>Wichtig für Muskeln und Sättigung. Gute Quellen: Joghurt, Quark, Bohnen, Fisch, Eier.</p>
+      </article>
+      <article>
+        <h3>Fette</h3>
+        <p>Gesunde Fette aus Nüssen, Samen, Avocado und Olivenöl sind sinnvoll.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Mini-Tagescheck</h2>
+      <button id="tipBtn">Tages-Tipp anzeigen</button>
+      <p id="tipOutput" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Hinweis: Diese Seite ersetzt keine medizinische Beratung.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
