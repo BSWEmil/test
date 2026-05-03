@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Über Emil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="badge">Persönliche Website</p>
+      <h1>Hi, ich bin Emil 👋</h1>
+      <p>
+        Willkommen auf meiner kleinen Seite! Hier findest du eine kurze Übersicht über mich,
+        meine Interessen und wie du mich erreichen kannst.
+      </p>
+      <div class="hero-actions">
+        <button id="aboutBtn" type="button">Mehr über mich</button>
+        <button id="hobbyBtn" type="button" class="secondary">Zufalls-Hobby</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Steckbrief</h2>
+        <ul class="facts">
+          <li><strong>Name:</strong> Emil</li>
+          <li><strong>Alter:</strong> 16 Jahre</li>
+          <li><strong>Wohnort:</strong> Deutschland</li>
+          <li><strong>Lieblingsfach:</strong> Informatik</li>
+        </ul>
+      </section>
+
+      <section class="card grid">
+        <article>
+          <h3>Über mich</h3>
+          <p>Ich lerne gerne neue Dinge, besonders rund um Technik, Webseiten und kreative Projekte.</p>
+        </article>
+        <article>
+          <h3>Meine Hobbys</h3>
+          <p>In meiner Freizeit spiele ich Fußball, höre Musik und probiere neue Coding-Ideen aus.</p>
+        </article>
+        <article>
+          <h3>Mein Ziel</h3>
+          <p>Ich möchte immer besser im Programmieren werden und später eigene größere Projekte bauen.</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Auch wichtig für mich: Ernährung</h2>
+        <ul class="facts">
+          <li><strong>Trinken:</strong> Ich achte auf genug Wasser über den Tag.</li>
+          <li><strong>Ausgewogen essen:</strong> Gemüse, Eiweiß und Vollkorn sind regelmäßig dabei.</li>
+          <li><strong>Energie für den Alltag:</strong> Gute Ernährung hilft mir beim Lernen und Sport.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Interaktiv</h2>
+        <p id="aboutOutput" aria-live="polite">Klick auf „Mehr über mich“, um einen Fun-Fact zu sehen.</p>
+        <p id="hobbyOutput" aria-live="polite">Klick auf „Zufalls-Hobby“, um ein Hobby zu erhalten.</p>
+      </section>
+
+      <section class="card contact">
+        <h2>Kontakt</h2>
+        <p>Du kannst mir gerne schreiben:</p>
+        <div class="contact-actions">
+          <a class="btn-link" href="mailto:emil@example.com">E-Mail senden</a>
+          <a class="btn-link secondary" href="#" aria-label="Instagram Profil von Emil">Instagram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© 2026 Emil – Danke fürs Vorbeischauen.</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
