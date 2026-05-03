@@ -1,0 +1,127 @@
+:root {
+  --bg: #0b1022;
+  --card: #151d3d;
+  --text: #eef2ff;
+  --muted: #aeb9e9;
+  --accent: #6d8bff;
+  --accent-2: #49ddb0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: Inter, Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a2a66, #0b1022 55%);
+}
+
+.hero {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(109, 139, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.card {
+  background: rgba(21, 29, 61, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.lesson-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.lesson {
+  animation: fadeUp 0.6s ease both;
+}
+
+.lesson:nth-child(2) { animation-delay: 0.08s; }
+.lesson:nth-child(3) { animation-delay: 0.16s; }
+.lesson:nth-child(4) { animation-delay: 0.24s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-link,
+.preview-btn {
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.preview-btn {
+  background: var(--accent-2);
+  color: #06261f;
+}
+
+.btn-link:hover,
+.preview-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.preview-panel pre {
+  margin: 0;
+  background: #0a0f24;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 0.9rem;
+  color: #e4ecff;
+  overflow-x: auto;
+  min-height: 180px;
+}
+
+code {
+  color: #9de7d4;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 1rem;
+}
+
+#lessonCounter {
+  margin: 0.35rem 0 0.8rem;
+  color: var(--muted);
+}
+
+#nextLessonBtn {
+  margin-bottom: 0.8rem;
+}
