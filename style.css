@@ -1,0 +1,88 @@
+:root {
+  --bg: #f5faf6;
+  --card: #ffffff;
+  --text: #1f2d1f;
+  --accent: #2f8b46;
+  --accent-soft: #d9efdf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+.hero {
+  background: linear-gradient(135deg, #d7efdd, #bee7c8);
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.35rem;
+}
+
+.container {
+  max-width: 920px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.checklist {
+  display: grid;
+  gap: 0.55rem;
+  margin-bottom: 0.8rem;
+}
+
+.checklist label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#scoreOutput {
+  margin: 0;
+  font-weight: 600;
+  background: var(--accent-soft);
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #4b5d4f;
+}
