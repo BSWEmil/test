@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ernährungsübersicht</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <h1>Kleine Übersicht zur Ernährung</h1>
-    <p>Einfach, ausgewogen und alltagstauglich.</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ernährungsübersicht</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Kleine Übersicht zur Ernährung</h1>
+      <p>Einfach, ausgewogen und alltagstauglich.</p>
+    </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Die wichtigsten Basics</h2>
-      <ul>
-        <li><strong>Gemüse &amp; Obst:</strong> Versuche ca. 5 Portionen am Tag (bunt gemischt).</li>
-        <li><strong>Trinken:</strong> 1,5–2 Liter Wasser oder ungesüßten Tee täglich.</li>
-        <li><strong>Vollkorn bevorzugen:</strong> Hält länger satt und liefert Ballaststoffe.</li>
-        <li><strong>Eiweiß einbauen:</strong> Bei jeder Hauptmahlzeit eine Proteinquelle ergänzen.</li>
-      </ul>
-    </section>
+    <main class="container">
+      <section class="card">
+        <h2>Die wichtigsten Basics</h2>
+        <ul>
+          <li><strong>Gemüse &amp; Obst:</strong> Etwa 5 Portionen am Tag, möglichst bunt.</li>
+          <li><strong>Trinken:</strong> 1,5 bis 2 Liter Wasser oder ungesüßten Tee täglich.</li>
+          <li><strong>Vollkorn:</strong> Bevorzuge Vollkornprodukte für mehr Ballaststoffe.</li>
+          <li><strong>Eiweiß:</strong> Ergänze zu jeder Hauptmahlzeit eine Eiweißquelle.</li>
+        </ul>
+      </section>
 
-    <section class="card grid">
-      <article>
-        <h3>Kohlenhydrate</h3>
-        <p>Hauptenergie für Körper und Gehirn. Gute Quellen: Vollkornbrot, Haferflocken, Kartoffeln, Hülsenfrüchte.</p>
-      </article>
-      <article>
-        <h3>Eiweiß</h3>
-        <p>Wichtig für Muskeln und Regeneration. Quellen: Magerquark, Joghurt, Eier, Tofu, Linsen, Fisch.</p>
-      </article>
-      <article>
-        <h3>Fette</h3>
-        <p>Unterstützen Hormone und Zellgesundheit. Bevorzuge Nüsse, Samen, Olivenöl und Avocado.</p>
-      </article>
-    </section>
+      <section class="card grid">
+        <article>
+          <h3>Kohlenhydrate</h3>
+          <p>Liefern Energie. Gute Quellen sind Vollkornbrot, Kartoffeln und Haferflocken.</p>
+        </article>
+        <article>
+          <h3>Eiweiß</h3>
+          <p>Wichtig für Muskeln und Sättigung, z. B. Quark, Eier, Linsen, Tofu oder Fisch.</p>
+        </article>
+        <article>
+          <h3>Fette</h3>
+          <p>Gesunde Fette aus Nüssen, Samen, Olivenöl und Avocado sinnvoll einbauen.</p>
+        </article>
+      </section>
 
-    <section class="card">
-      <h2>Schneller Tages-Check</h2>
-      <div class="checklist">
-        <label><input type="checkbox" class="day-check" /> Ich habe heute genug getrunken.</label>
-        <label><input type="checkbox" class="day-check" /> Ich habe Gemüse oder Obst gegessen.</label>
-        <label><input type="checkbox" class="day-check" /> Ich hatte eine Eiweißquelle in einer Mahlzeit.</label>
-      </div>
-      <p id="scoreOutput" aria-live="polite">Erfüllt: 0 von 3 Punkten</p>
-    </section>
+      <section class="card">
+        <h2>Schneller Tages-Check</h2>
+        <div class="checklist">
+          <label><input class="day-check" type="checkbox" /> Ich habe genug getrunken.</label>
+          <label><input class="day-check" type="checkbox" /> Ich habe Gemüse oder Obst gegessen.</label>
+          <label><input class="day-check" type="checkbox" /> Ich hatte eine Eiweißquelle.</label>
+        </div>
+        <p id="scoreOutput" aria-live="polite">Erfüllt: 0 von 3 Punkten</p>
+      </section>
 
-    <section class="card">
-      <h2>Mini-Tages-Tipp</h2>
-      <button id="tipBtn" type="button">Tipp anzeigen</button>
-      <p id="tipOutput" aria-live="polite"></p>
-    </section>
-  </main>
+      <section class="card">
+        <h2>Mini-Tages-Tipp</h2>
+        <button id="tipBtn" type="button">Tipp anzeigen</button>
+        <p id="tipOutput" aria-live="polite"></p>
+      </section>
+    </main>
 
-  <footer>
-    <small>Hinweis: Diese Seite ist eine allgemeine Orientierung und ersetzt keine medizinische Beratung.</small>
-  </footer>
+    <footer>
+      <small>Hinweis: Diese Seite ersetzt keine medizinische Beratung.</small>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
